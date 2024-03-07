@@ -56,6 +56,7 @@
 
 <p>Los pasos que se detallan a continuación serán para realizarlos a través de comandos de la consola.</p>
 
+
 + Para construir el proyecto habrá que ir al directorio del proyecto y ejecutar:
 
   ```
@@ -64,7 +65,8 @@
 
   Esta instrucción generará un fichero 'inditex-1.0.jar' en el directorio 'bcnc-inditex/target' después de compilar la aplicación y correr los test.
 
-  Se podrá acceder al informe de covertura que se ha generado con la herramienta 'jacoco' en 'bcnc-inditex/target/site/jacoco/index.html'.
+  Se podrá acceder al informe de cobertura que se ha generado con la herramienta 'jacoco' en 'bcnc-inditex/target/site/jacoco/index.html'.
+
 
 + Para hacer correr la aplicación ejecutar:
 
@@ -72,35 +74,15 @@
   java -jar target/inditex-1.0.jar
   
   ```
-
-+ A partir de este momento la aplicación ya está arrancada en el puerto 8081:
-
-  ```
-  http://localhost:8081/album
   
-  ``` 
+  A partir de este momento la aplicación ya está arrancada en el puerto 8081.
+
 
 + Las url de cada endpoint del microservicio son:
 
-    - Recuperar albumes/fotos y guardandolos en BBDD:
-
-      ```
+    - Recuperar albumes/fotos y guardandolos en BBDD: http://localhost:8081/album/getAPIExternalAndSaveBBDD
+  
+    - Recuperar albumes/fotos y mostrar resultado: http://localhost:8081/album/getAPIExternal
+  
+    - Recuperar de BBDD albumes/fotos: http://localhost:8081/album/getAll
       
-      http://localhost:8081/album/getAPIExternalAndSaveBBDD
-  
-      ```
-
-    - Recuperar albumes/fotos y mostrar resultado:
-
-      ```
-  
-      http://localhost:8081/album/getAPIExternal
-  
-      ```
-
-    - Recuperar de BBDD albumes/fotos:
-
-      ```
-      http://localhost:8081/album/getAll
-      
-      ```

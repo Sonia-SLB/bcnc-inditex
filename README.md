@@ -1,9 +1,10 @@
 # Prueba BCNC para Inditex
 ## Contenido
-1. [Información general](#info-general)
-2. [Tecnologías](#tecnologias)
+1. [Información general](#información-general)
+2. [Tecnologías](#tecnologías)
 3. [Arquitectura](#arquitectura)
-4. [Instalación y ejecución](#instalacion)
+4. [Instalación y ejecución](#instalación-y-ejecución)
+
 
 <a name="info-general"></a>
 ### Información general
@@ -48,8 +49,8 @@
 >
 >**Entidades:** Son los objetos DAO de persistencia en la base de datos
 
-<a name="instalacion"></a>
-### Instalación y ejecución
+<a name="instalación"></a>
+### Instalación y Ejecución
 ***
 <p>Será necesario tener instalado java 17 y maven.</p>
 
